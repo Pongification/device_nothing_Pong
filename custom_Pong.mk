@@ -30,3 +30,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=Pong \
     SystemDevice=Pong \
     SystemName=Pong
+
+# Signing
+-include vendor/lineage-priv/keys/keys.mk
