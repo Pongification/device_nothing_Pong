@@ -43,12 +43,6 @@ echo 85 > /proc/sys/walt/sched_group_downmigrate
 echo 100 > /proc/sys/walt/sched_group_upmigrate
 echo 1 > /proc/sys/walt/sched_walt_rotate_big_tasks
 echo 400000000 > /proc/sys/walt/sched_coloc_downmigrate_ns
-echo 39000000 39000000 39000000 39000000 39000000 39000000 39000000 5000000 > /proc/sys/walt/sched_coloc_busy_hyst_cpu_ns
-echo 240 > /proc/sys/walt/sched_coloc_busy_hysteresis_enable_cpus
-echo 10 10 10 10 10 10 10 95 > /proc/sys/walt/sched_coloc_busy_hyst_cpu_busy_pct
-echo 5000000 5000000 5000000 5000000 5000000 5000000 5000000 2000000 > /proc/sys/walt/sched_util_busy_hyst_cpu_ns
-echo 255 > /proc/sys/walt/sched_util_busy_hysteresis_enable_cpus
-echo 15 15 15 15 15 15 15 15 > /proc/sys/walt/sched_util_busy_hyst_cpu_util
 
 # set the threshold for low latency task boost feature which prioritize
 # binder activity tasks
