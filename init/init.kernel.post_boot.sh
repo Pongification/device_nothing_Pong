@@ -75,7 +75,7 @@ function configure_zram_parameters() {
 
 function configure_read_ahead_kb_values() {
 	dmpts=$(ls /sys/block/*/queue/read_ahead_kb | grep -e dm -e mmc -e sd)
-	ra_kb=128
+	ra_kb=512
 	# dmpts holds below read_ahead_kb nodes if exists:
 	# /sys/block/dm-0/queue/read_ahead_kb to /sys/block/dm-10/queue/read_ahead_kb
 	# /sys/block/sda/queue/read_ahead_kb to /sys/block/sdh/queue/read_ahead_kb
