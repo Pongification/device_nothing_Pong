@@ -122,6 +122,11 @@ function configure_memory_parameters() {
 	# huge pages is not as necessary.
 	echo 0 > /proc/sys/vm/compaction_proactiveness
 
+	# Disable watermark boost when MGLRU
+	if [ -f /proc/sys/vm/watermark_boost_factor ]; then
+		echo 0 > /proc/sys/vm/watermark_boost_factor
+	fi
+
 	# With THP enabled, the kernel greatly increases min_free_kbytes over its
 	# default value. Disable THP to prevent resetting of min_free_kbytes
 	# value during online/offline pages.
