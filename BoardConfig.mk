@@ -79,7 +79,6 @@ DEVICE_MANIFEST_FILE += \
 # Kernel
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
-    androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3
 
 TARGET_KERNEL_CLANG_VERSION := r563880c
