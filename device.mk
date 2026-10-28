@@ -334,7 +334,6 @@ PRODUCT_PACKAGES += \
 # TARO overlays
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
-    WifiResTarget
 
 # PONG overlays
 PRODUCT_PACKAGES += \
