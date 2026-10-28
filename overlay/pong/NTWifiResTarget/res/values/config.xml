@@ -3,7 +3,19 @@
      Copyright (C) 2023 The LineageOS Project
      SPDX-License-Identifier: BSD-3-Clause
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
+    <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
+    <bool name="config_wifi6ghzSupport">true</bool>
+
+    <!-- Wifi driver supports 6GHz band for softap when chip support 6GHz -->
+    <bool name="config_wifiSoftap6ghzSupported">true</bool>
+
+    <!-- Indicates that STA + bridged AP concurrency mode is supported on this device provided
+     that the device interface combination allows for it-->
+    <bool name="config_wifiStaWithBridgedSoftApConcurrencySupported">true</bool>
+
+    <!-- Do not translate. Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Nothing Phone (2)</string>
 
     <!--
     Controls the mapping between RSSI and RSSI levels.
@@ -28,25 +40,8 @@
         <item>-65</item>
     </integer-array>
 
-    <!-- Boolean indicating whether the WiFi chipset has 6GHz band support -->
-    <bool name="config_wifi6ghzSupport">true</bool>
-
     <!-- Whether to allow Settings or SUW to create insecure Enterprise networks where server
          certificate is not validated, by not specifying a Root CA certificate and/or server domain
          name. It is STRONGLY RECOMMENDED to be set to false -->
     <bool name="config_wifiAllowInsecureEnterpriseConfigurationsForSettingsAndSUW">true</bool>
-
-    <!-- Enable WPA2 to WPA3 auto-upgrade offload to capable Driver/Firmware -->
-    <bool name="config_wifiSaeUpgradeOffloadEnabled">false</bool>
-
-    <!-- Wifi driver supports 6GHz band for softap when chip support 6GHz -->
-    <bool name="config_wifiSoftap6ghzSupported">true</bool>
-
-    <!-- Do not translate. Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Nothing Phone (2)</string>
-
-    <!-- Indicates that STA + bridged AP concurrency mode is supported on this device provided
-         that the device interface combination allows for it-->
-    <bool translatable="false" name="config_wifiStaWithBridgedSoftApConcurrencySupported">true</bool>
-
 </resources>
