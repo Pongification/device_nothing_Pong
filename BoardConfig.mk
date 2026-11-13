@@ -95,7 +95,8 @@ TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/waipio_GKI.config \
     vendor/nothing/waipio_GKI.config \
-    vendor/debugfs.config
+    vendor/debugfs.config \
+    vendor/nothing/droidspaces.config
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
