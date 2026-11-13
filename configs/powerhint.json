@@ -311,7 +311,7 @@
       "Name": "DDRQOSBoostFreq",
       "Path": "/sys/devices/system/cpu/bus_dcvs/DDRQOS/boost_freq",
       "Values": [
-        "1555000",
+        "1",
         "0"
       ],
       "DefaultIndex": 1,
@@ -464,7 +464,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "DDRQOSBoostFreq",
       "Duration": 0,
-      "Value": "1555000"
+      "Value": "1"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
@@ -770,7 +770,7 @@
       "PowerHint": "LAUNCH",
       "Node": "DDRQOSBoostFreq",
       "Duration": 2000,
-      "Value": "1555000"
+      "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
