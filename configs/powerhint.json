@@ -174,15 +174,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "GPUForceRailOn",
-      "Path": "/sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/force_rail_on",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "GPUForceClkOn",
       "Path": "/sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/force_clk_on",
       "Values": [
@@ -860,12 +851,6 @@
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUForceNoNap",
-      "Duration": 0,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "EXPENSIVE_RENDERING",
-      "Node": "GPUForceRailOn",
       "Duration": 0,
       "Value": "1"
     },
