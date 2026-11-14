@@ -292,6 +292,7 @@
       "Values": [
         "1066000",
         "600000",
+        "466000",
         "300000"
       ],
       "ResetOnInit": true
@@ -608,7 +609,7 @@
       "PowerHint": "INTERACTION",
       "Node": "LLCCBWMinFreq",
       "Duration": 0,
-      "Value": "600000"
+      "Value": "466000"
     },
     {
       "PowerHint": "INTERACTION",
