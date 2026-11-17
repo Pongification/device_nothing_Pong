@@ -288,8 +288,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/media_codecs_cape_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_cape_vendor.xml 
 
-TARGET_SUPPORTS_OMX_SERVICE := false
-
 PRODUCT_PACKAGES += \
     libpalclient
 
