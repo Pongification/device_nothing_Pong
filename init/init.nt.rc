@@ -31,6 +31,12 @@ on boot
     chown system system /sys/class/leds/vibrator/duration
     chown system system /sys/class/leds/vibrator/state
 
+    # LTPO panel feature
+    chown system system /sys/panel_feature/skip_frame_mode
+    chmod 0660 /sys/panel_feature/skip_frame_mode
+    chown system system /sys/panel_feature/hbm_mode
+    chmod 0660 /sys/panel_feature/hbm_mode
+
 on post-fs-data
     # Camera
     mkdir /data/vendor/camera 0775 camera camera
