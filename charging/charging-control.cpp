@@ -54,7 +54,7 @@ int ChargeStatusListener::write_value(const char *file, const char *value) {
         return -errno;
     }
 
-    ret = TEMP_FAILURE_RETRY(write(fd, value, strlen(value) + 1));
+    ret = TEMP_FAILURE_RETRY(write(fd, value, strlen(value)));
     if (ret == -1) {
         ret = -errno;
     } else {
