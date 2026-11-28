@@ -415,15 +415,10 @@
         <item>"/vendor/lib64/libllvm-qcom.so"</item>
         <item>"/vendor/lib64/libllvm-qgl.so"</item>
         <item>"/vendor/lib64/libsdmextension.so"</item>
-        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
-        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
     </string-array>
 
     <!-- Default: 60 MB. Bytes that the PinnerService will pin for Home app -->
     <integer name="config_pinnerHomePinBytes">6291456</integer>
-
-    <!-- Colon separated list of package names that should be granted Notification Listener access -->
-    <string name="config_defaultListenerAccessPackages" translatable="false">co.aospa.glyph</string>
 
     <!-- The default refresh rate for a given device. Change this value to set a higher default
          refresh rate. If the hardware composer on the device supports display modes with a higher

@@ -318,9 +318,6 @@ PRODUCT_BOOT_JARS += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-
 # QSSI overlays
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
@@ -331,11 +328,13 @@ PRODUCT_PACKAGES += \
 
 # TARO overlays
 PRODUCT_PACKAGES += \
-    FrameworksResTarget \
+    FrameworksResTarget
 
 # PONG overlays
 PRODUCT_PACKAGES += \
+    NTApertureResTarget \
     NTCarrierConfigResTarget \
+    NTFrameworksResProduct \
     NTFrameworksResTarget \
     NTNfcResTarget \
     NTSettingsProviderResTarget \
